@@ -7,6 +7,9 @@
 
 _An ASP.NET Core Web API that allows users to access data about the United States National Parks._
 
+## Preview
+
+![API Preview](/parkfinder/wwwroot/img/APIPreview.png)
 
 ## Setup/Installation Requirements
 
