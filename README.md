@@ -115,7 +115,7 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 * _Swashbuckle 5.0.0_
 * _[Postman](postman.com)_
 * _[Badlands Photography by Andreas Eckert](https://www.doi.gov/blog/10-things-you-didnt-know-about-badlands-national-park)_
-* _National Parks CSV from [National Parks Service](nps.gov)_
+* _National Parks CSV from [Download Excel Files](https://www.downloadexcelfiles.com/us_en/download-excel-file-list-national-parks-us)_
 
 ## License
 

@@ -8,8 +8,8 @@ using ParkFinder.Models;
 namespace ParkFinder.Migrations
 {
     [DbContext(typeof(ParkFinderContext))]
-    [Migration("20200403171835_Initial")]
-    partial class Initial
+    [Migration("20200403231110_SeedData")]
+    partial class SeedData
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -25,13 +25,16 @@ namespace ParkFinder.Migrations
 
                     b.Property<string>("Area");
 
-                    b.Property<string>("DateEstablished");
+                    b.Property<string>("DateEstablished")
+                        .IsRequired();
 
                     b.Property<string>("Description");
 
-                    b.Property<string>("Location");
+                    b.Property<string>("Location")
+                        .IsRequired();
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired();
 
                     b.HasKey("ParkId");
 
@@ -40,11 +43,11 @@ namespace ParkFinder.Migrations
                     b.HasData(
                         new
                         {
-                            ParkId = 1,
+                            ParkId = 60,
                             Area = "47,389.67 acres (191.8 km2)",
                             DateEstablished = "January 1, 2010",
                             Description = "Set in Downtown Portland, this park feature lots of computers, feral young programmers, and hand sanitizer.",
-                            Location = "Portland, OR",
+                            Location = "Portland",
                             Name = "Epicodus"
                         });
                 });

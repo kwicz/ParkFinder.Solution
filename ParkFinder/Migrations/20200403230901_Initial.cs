@@ -13,9 +13,9 @@ namespace ParkFinder.Migrations
                 {
                     ParkId = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(nullable: true),
-                    Location = table.Column<string>(nullable: true),
-                    DateEstablished = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(nullable: false),
+                    Location = table.Column<string>(nullable: false),
+                    DateEstablished = table.Column<string>(nullable: false),
                     Area = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true)
                 },
@@ -23,11 +23,6 @@ namespace ParkFinder.Migrations
                 {
                     table.PrimaryKey("PK_Parks", x => x.ParkId);
                 });
-
-            migrationBuilder.InsertData(
-                table: "Parks",
-                columns: new[] { "ParkId", "Area", "DateEstablished", "Description", "Location", "Name" },
-                values: new object[] { 1, "47,389.67 acres (191.8 km2)", "January 1, 2010", "Set in Downtown Portland, this park feature lots of computers, feral young programmers, and hand sanitizer.", "Portland, OR", "Epicodus" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
