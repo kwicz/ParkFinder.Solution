@@ -55,20 +55,14 @@ http://127.0.0.1:5000
 
 ## Seed Additional National Park Data (Optional)
 
-1. In terminal, navigate into MySql.
-```sh
-mysql -uroot -p<yourpassword>
-```
-2. Insert data from nationalParks.csv into the parks table:
-```sh
-PREPARE stmt FROM 'INSERT INTO `k_wicz`.`parks` (`Description`,`Area`,`ParkId`,`Location`,`DateEstablished`,`Name`) VALUES(?,?,?,?,?,?);'
-DEALLOCATE PREPARE stmt;
-```
-3. Confirm data has been inserted
-```sh
-SELECT * FROM kwicz.Parks LIMIT 0, 1000;
-```
-
+1. Open MySQL WorkBench.
+2. Navigate to the `Schema` tab.
+3. Right click on `k_wicz` and select `Table Data Import Wizard`.
+4. Select `nationalParks.utf8.csv` from the root directory of the project and click `Next`.
+5. Select `Use existing table` and from the drop down, select `k_wicz.parks`.  Click `Next`.
+6. Confirm the data is correct and click `Next`.
+7. Confirm executing the import.
+8. Congratulations! You have a filled `parks` table that you can now query.
 
 ## Park Finder API Endpoints
 _Once you have installed this program, you can use these endpoints on your local host in your browser._
@@ -114,7 +108,7 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 * _Razor 2.2.0_
 * _Swashbuckle 5.0.0_
 * _[Postman](postman.com)_
-* _Badlands Photography by Andreas Eckert_
+* _[Badlands Photography by Andreas Eckert](https://www.doi.gov/blog/10-things-you-didnt-know-about-badlands-national-park)_
 * _National Parks CSV from [National Parks Service](nps.gov)_
 
 ## License
