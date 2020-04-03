@@ -90,6 +90,9 @@ DELETE /api/parks/{id}
 ```sh
 https://localhost:5000/api/parks/?name=epicodus
 ```
+#### Further API Exploration
+
+_You can explore these endpoints further after downloading this repo and exploring this API's [Swagger Documentation](https://localhost:5001/swagger/index.html).
 
 ## Known Bugs
 
