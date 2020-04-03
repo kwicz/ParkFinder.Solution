@@ -8,7 +8,7 @@ using ParkFinder.Models;
 namespace ParkFinder.Migrations
 {
     [DbContext(typeof(ParkFinderContext))]
-    [Migration("20200403162945_Initial")]
+    [Migration("20200403171835_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

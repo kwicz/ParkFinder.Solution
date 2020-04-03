@@ -8,7 +8,7 @@ namespace ParkFinder.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
-  public class AnimalsController : ControllerBase
+  public class ParksController : ControllerBase
   {
     private ParkFinderContext _db;
 

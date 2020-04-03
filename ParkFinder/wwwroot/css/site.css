@@ -1,5 +1,4 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿@import url('https://fonts.googleapis.com/css?family=Catamaran:900&display=swap');
 
 a.navbar-brand {
   white-space: normal;
@@ -44,6 +43,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-image: url(https://www.doi.gov/sites/doi.gov/files/uploads/badlands-np-andreas-eckert-ste-small_1.jpg);
 }
 .footer {
   position: absolute;
@@ -53,4 +53,15 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
+  background-color: white;
+}
+
+h1 {
+  font-family: Catamaran;
+  color: indianred;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.text-center {
+  font-size: 400px;
 }
