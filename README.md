@@ -9,7 +9,7 @@ _An ASP.NET Core Web API that allows users to access data about the United State
 
 ## Preview
 
-![API Preview](/parkfinder/wwwroot/img/APIPreview.png)
+![API Preview](/parkfinder/wwwroot/img/preview.png)
 
 ## Setup/Installation Requirements
 
@@ -56,7 +56,7 @@ Hold ```command``` while clicking the link in your local terminal to your local 
 http://127.0.0.1:5000
 ```
 
-## Seed Additional National Park Data (Optional)
+## Seed National Park Data (Optional)
 
 1. Open MySQL WorkBench.
 2. Navigate to the `Schema` tab.
@@ -81,21 +81,21 @@ PUT /api/parks/{id}
 DELETE /api/parks/{id}
 ```
 #### Path Parameters
-| Parameter | Type | Default | Description |
-| :---: | :---: | :---: | --- |
-| name | string | none | Returns matches by park name.
-| location | string | none | Returns all parks in specified location. |
-| dateEstablished | string | none | Returns all parks established on specified date. |
-| area | string | none | Returns all parks with specifed area. |
+| Parameter | Type | Description |
+| :---: | :---: | --- |
+| name | string | Returns matches by park name.
+| location | string | Returns all parks in specified location. |
+| dateEstablished | string | Returns all parks established on specified date. |
+| area | string | Returns all parks with specifed area. |
 | description | string | Returns all parks with specified description. |
 
 #### Example Query
 ```sh
-https://localhost:5000/api/parks/?name=epicodus
+https://localhost:5000/api/parks/?name=Epicodus&location=Portland&dateEstablished=January%201%2C%202010
 ```
 #### Further API Exploration
 
-_You can explore these endpoints further after downloading this repo and exploring this API's [Swagger Documentation](https://localhost:5001/swagger/index.html).
+_You can explore these endpoints further after downloading this repo and exploring this API's [Swagger Documentation](https://localhost:5001/swagger/index.html)._
 
 ## Known Bugs
 
@@ -110,15 +110,15 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 * _.NET Core 2.2_
 * _ASP.NET Core MVC_
 * _MySQL 2.2.0_
+* _MySQL Workbench 8.0_
 * _EF Core 2.2.0_
 * _Razor 2.2.0_
 * _Swashbuckle 5.0.0_
-* _[Postman](postman.com)_
 * _[Badlands Photography by Andreas Eckert](https://www.doi.gov/blog/10-things-you-didnt-know-about-badlands-national-park)_
 * _National Parks CSV from [Download Excel Files](https://www.downloadexcelfiles.com/us_en/download-excel-file-list-national-parks-us)_
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT License](https://choosealicense.com/licenses/mit/)
 
 Copyright (c) 2020 **_K Wicz_**

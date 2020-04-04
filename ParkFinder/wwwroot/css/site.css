@@ -45,6 +45,7 @@ body {
   margin-bottom: 60px;
   background-image: url(https://www.doi.gov/sites/doi.gov/files/uploads/badlands-np-andreas-eckert-ste-small_1.jpg);
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -58,10 +59,22 @@ body {
 
 h1 {
   font-family: Catamaran;
-  color: indianred;
-  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  color: white;
+}
+
+h3 {
+  color:white;
 }
 
 .text-center {
   font-size: 400px;
+  margin: auto;
+  background-color: indianred;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.wrapper {
+  display: flex;
+  height: 450px;
 }
