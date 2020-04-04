@@ -9,7 +9,7 @@ _An ASP.NET Core Web API that allows users to access data about the United State
 
 ## Preview
 
-![API Preview](/parkfinder/wwwroot/img/preview.png)
+![Preview](ParkFinder/wwwroot/img/preview.png)
 
 ## Setup/Installation Requirements
 
